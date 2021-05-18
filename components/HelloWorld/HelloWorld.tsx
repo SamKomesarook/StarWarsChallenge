@@ -3,7 +3,6 @@ import GET_ALL_STARSHIPS from '../../queries/AllStarships';
 import GET_STARSHIP from '../../queries/Starship';
 import { useQuery, useLazyQuery } from '@apollo/client';
 import React, { useState } from 'react';
-import vector from './images/Vector.png';
 
 export function HelloWorld() {
   const [selected, setSelected] = useState({});
@@ -26,10 +25,9 @@ export function HelloWorld() {
 
   function Feature({ title, desc, item, ...rest }) {
     return (
-      <Box p={5} shadow="md" borderWidth="1px" {...rest} onClick={() => selectShip(item)}>
+      <Box style={{ display: 'flex', flexDirection: 'row' }} p={5} shadow="md" borderWidth="1px" {...rest} onClick={() => selectShip(item)}>
         <Heading fontSize="xl">{title}</Heading>
-        <Text mt={4}>{desc}</Text>
-        <img src={vector} />
+        <Text>{desc}</Text>
       </Box>
     );
   }
@@ -58,14 +56,16 @@ export function HelloWorld() {
       <div style={{ flex: 2, display: 'flex', alignContent: 'center', alignItems: 'center', justifyItems: 'center' }}>
         <div>Top rated starships</div>
       </div>
-      <div style={{ flex: 2, overflowY: 'scroll', height: '50vh', marginTop: '25vh' }}>
-        <Input variant="outline" placeholder="Search" onChange={handleChange} />
-        <Stack spacing={8}>
-          {filtered !== [] &&
-            filtered.map((elem: any) => {
-              return <Feature title={elem.name} desc={elem.hyperdriveRating} item={elem} />;
-            })}
-        </Stack>
+      <div style={{ flex: 2 }}>
+        <Input variant="outline" placeholder="Search" onChange={handleChange} style={{ marginTop: '25vh', marginBottom: '6px' }} />
+        <div style={{ overflowY: 'scroll', height: '50vh' }}>
+          <Stack spacing={8}>
+            {filtered !== [] &&
+              filtered.map((elem: any) => {
+                return <Feature title={elem.name} desc={elem.hyperdriveRating} item={elem} />;
+              })}
+          </Stack>
+        </div>
       </div>
       <div style={{ flex: 2 }}>
         <div
