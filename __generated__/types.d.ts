@@ -39,7 +39,6 @@ export type Film = Node & {
   id: Scalars['ID'];
 };
 
-
 /** A single film. */
 export type FilmSpeciesConnectionArgs = {
   after?: Maybe<Scalars['String']>;
@@ -47,7 +46,6 @@ export type FilmSpeciesConnectionArgs = {
   before?: Maybe<Scalars['String']>;
   last?: Maybe<Scalars['Int']>;
 };
-
 
 /** A single film. */
 export type FilmStarshipConnectionArgs = {
@@ -57,7 +55,6 @@ export type FilmStarshipConnectionArgs = {
   last?: Maybe<Scalars['Int']>;
 };
 
-
 /** A single film. */
 export type FilmVehicleConnectionArgs = {
   after?: Maybe<Scalars['String']>;
@@ -66,7 +63,6 @@ export type FilmVehicleConnectionArgs = {
   last?: Maybe<Scalars['Int']>;
 };
 
-
 /** A single film. */
 export type FilmCharacterConnectionArgs = {
   after?: Maybe<Scalars['String']>;
@@ -74,7 +70,6 @@ export type FilmCharacterConnectionArgs = {
   before?: Maybe<Scalars['String']>;
   last?: Maybe<Scalars['Int']>;
 };
-
 
 /** A single film. */
 export type FilmPlanetConnectionArgs = {
@@ -388,7 +383,6 @@ export type Person = Node & {
   id: Scalars['ID'];
 };
 
-
 /** An individual person or character within the Star Wars universe. */
 export type PersonFilmConnectionArgs = {
   after?: Maybe<Scalars['String']>;
@@ -397,7 +391,6 @@ export type PersonFilmConnectionArgs = {
   last?: Maybe<Scalars['Int']>;
 };
 
-
 /** An individual person or character within the Star Wars universe. */
 export type PersonStarshipConnectionArgs = {
   after?: Maybe<Scalars['String']>;
@@ -405,7 +398,6 @@ export type PersonStarshipConnectionArgs = {
   before?: Maybe<Scalars['String']>;
   last?: Maybe<Scalars['Int']>;
 };
-
 
 /** An individual person or character within the Star Wars universe. */
 export type PersonVehicleConnectionArgs = {
@@ -563,7 +555,6 @@ export type Planet = Node & {
   id: Scalars['ID'];
 };
 
-
 /**
  * A large mass, planet or planetoid in the Star Wars Universe, at the time of
  * 0 ABY.
@@ -574,7 +565,6 @@ export type PlanetResidentConnectionArgs = {
   before?: Maybe<Scalars['String']>;
   last?: Maybe<Scalars['Int']>;
 };
-
 
 /**
  * A large mass, planet or planetoid in the Star Wars Universe, at the time of
@@ -707,7 +697,6 @@ export type Root = {
   node?: Maybe<Node>;
 };
 
-
 export type RootAllFilmsArgs = {
   after?: Maybe<Scalars['String']>;
   first?: Maybe<Scalars['Int']>;
@@ -715,12 +704,10 @@ export type RootAllFilmsArgs = {
   last?: Maybe<Scalars['Int']>;
 };
 
-
 export type RootFilmArgs = {
   id?: Maybe<Scalars['ID']>;
   filmID?: Maybe<Scalars['ID']>;
 };
-
 
 export type RootAllPeopleArgs = {
   after?: Maybe<Scalars['String']>;
@@ -729,12 +716,10 @@ export type RootAllPeopleArgs = {
   last?: Maybe<Scalars['Int']>;
 };
 
-
 export type RootPersonArgs = {
   id?: Maybe<Scalars['ID']>;
   personID?: Maybe<Scalars['ID']>;
 };
-
 
 export type RootAllPlanetsArgs = {
   after?: Maybe<Scalars['String']>;
@@ -743,12 +728,10 @@ export type RootAllPlanetsArgs = {
   last?: Maybe<Scalars['Int']>;
 };
 
-
 export type RootPlanetArgs = {
   id?: Maybe<Scalars['ID']>;
   planetID?: Maybe<Scalars['ID']>;
 };
-
 
 export type RootAllSpeciesArgs = {
   after?: Maybe<Scalars['String']>;
@@ -757,12 +740,10 @@ export type RootAllSpeciesArgs = {
   last?: Maybe<Scalars['Int']>;
 };
 
-
 export type RootSpeciesArgs = {
   id?: Maybe<Scalars['ID']>;
   speciesID?: Maybe<Scalars['ID']>;
 };
-
 
 export type RootAllStarshipsArgs = {
   after?: Maybe<Scalars['String']>;
@@ -771,12 +752,10 @@ export type RootAllStarshipsArgs = {
   last?: Maybe<Scalars['Int']>;
 };
 
-
 export type RootStarshipArgs = {
   id?: Maybe<Scalars['ID']>;
   starshipID?: Maybe<Scalars['ID']>;
 };
-
 
 export type RootAllVehiclesArgs = {
   after?: Maybe<Scalars['String']>;
@@ -785,12 +764,10 @@ export type RootAllVehiclesArgs = {
   last?: Maybe<Scalars['Int']>;
 };
 
-
 export type RootVehicleArgs = {
   id?: Maybe<Scalars['ID']>;
   vehicleID?: Maybe<Scalars['ID']>;
 };
-
 
 export type RootNodeArgs = {
   id: Scalars['ID'];
@@ -838,7 +815,6 @@ export type Species = Node & {
   id: Scalars['ID'];
 };
 
-
 /** A type of person or character within the Star Wars Universe. */
 export type SpeciesPersonConnectionArgs = {
   after?: Maybe<Scalars['String']>;
@@ -846,7 +822,6 @@ export type SpeciesPersonConnectionArgs = {
   before?: Maybe<Scalars['String']>;
   last?: Maybe<Scalars['Int']>;
 };
-
 
 /** A type of person or character within the Star Wars Universe. */
 export type SpeciesFilmConnectionArgs = {
@@ -1015,7 +990,6 @@ export type Starship = Node & {
   id: Scalars['ID'];
 };
 
-
 /** A single transport craft that has hyperdrive capability. */
 export type StarshipPilotConnectionArgs = {
   after?: Maybe<Scalars['String']>;
@@ -1023,7 +997,6 @@ export type StarshipPilotConnectionArgs = {
   before?: Maybe<Scalars['String']>;
   last?: Maybe<Scalars['Int']>;
 };
-
 
 /** A single transport craft that has hyperdrive capability. */
 export type StarshipFilmConnectionArgs = {
@@ -1179,7 +1152,6 @@ export type Vehicle = Node & {
   id: Scalars['ID'];
 };
 
-
 /** A single transport craft that does not have hyperdrive capability */
 export type VehiclePilotConnectionArgs = {
   after?: Maybe<Scalars['String']>;
@@ -1187,7 +1159,6 @@ export type VehiclePilotConnectionArgs = {
   before?: Maybe<Scalars['String']>;
   last?: Maybe<Scalars['Int']>;
 };
-
 
 /** A single transport craft that does not have hyperdrive capability */
 export type VehicleFilmConnectionArgs = {
